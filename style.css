@@ -1,0 +1,67 @@
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: 100;
+	line-height: 1.8em;
+	width: 100%;
+	position: absolute; 
+	width: 80%;
+	left: 10%;	
+}
+h1 {
+    font-weight: 400;
+}
+aside section h1 {
+/*	font-size: 1.5em;*/
+	letter-spacing: -0.06em;		
+	text-transform: uppercase;
+}
+
+/*****header*****/
+header{ 
+	position: relative;
+	top: 0;
+	background: url(img/header.jpg);
+	color: #777777;
+	height: 35px;
+	text-align: left;
+	border:#3F0 thick;
+	margin: 5px 0px;
+}
+hgroup, hgroup h1, nav, nav ul, nav ul li {
+	display: inline;
+    margin: 0;
+	padding: 0;
+}
+hgroup {
+	position: absolute;
+	left: 30px;
+	padding-top: 10px;
+}
+nav {
+	position: absolute;
+	right: 30px;
+	padding-top: 10px;
+}
+nav ul li {
+	margin: 0px 10px;
+	padding: 0px;
+	font-size: 11px;
+	list-style-type: none;
+	display: inline;
+}
+nav li a:link, nav li a:hover{
+	color: #777777;;
+	text-decoration: none;
+}
+
+/*****left side*****/
+aside #left {
+	float: left;
+	width: 173px;
+	height: 252px;
+}
+right {
+	float: right;
+}
