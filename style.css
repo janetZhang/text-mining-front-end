@@ -48,20 +48,71 @@ nav ul li {
 	margin: 0px 10px;
 	padding: 0px;
 	font-size: 11px;
-	list-style-type: none;
 	display: inline;
 }
-nav li a:link, nav li a:hover{
+nav li a:link, nav li a:visited{
 	color: #777777;;
+	text-decoration: none;
+}
+nav li a:hover, nav li a:active{
+	color: #777789;;
 	text-decoration: none;
 }
 
 /*****left side*****/
-aside #left {
+#left {
 	float: left;
-	width: 173px;
-	height: 252px;
+	width: 200px;
+	height: auto;
+
 }
-right {
-	float: right;
+.left_container{
+	border: 2px solid rgb(234,234,234);
+	padding: 10px 8px;
+	margin: 20px 0;
+	color: rgb(36,137,204);
+	background-color: rgb(245,245,245);
+}
+.left_container--up{
+	background-color: #fff;
+}
+.left_container--bottom ul li{	
+	border-bottom: 2px solid rgb(234,234,234);
+}
+.left_container ul li a:link, .left_container ul li a:visited{
+	display:block;
+	line-height: 180%;
+	background-color: rgb(245,245,245);
+	color: rgb(36,137,204);
+	text-decoration: none;
+}
+.left_container--up ul li a:link, .left_container--up ul li a:visited{
+	background-color: #FFF;
+}
+.left_container ul li a:hover, .left_container ul li a:active{
+	color: #FFF;
+	background-color: rgb(36,137,204);
+    text-decoration: none;
+}
+.left_container ul li{
+	list-style-type: none;
+	text-align:left;
+	line-height:normal;
+	margin: 3px;
+	padding: 6px 3px;
+}
+
+/*****right side****/
+#right {
+   position: relative;
+   width: 80%;
+   left: 10%;
+	
+}
+
+/***** footer*****/
+footer{
+	clear: left;
+	position: relative;
+	text-align: center;
 }
