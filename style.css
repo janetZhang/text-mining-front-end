@@ -2,7 +2,7 @@
 body {
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 12px;
-	font-weight: 100;
+	font-weight: normal;
 	line-height: 1.8em;
 	width: 100%;
 	position: absolute; 
@@ -10,7 +10,7 @@ body {
 	left: 10%;	
 }
 h1 {
-    font-weight: 400;
+    font-weight: normal;
 }
 aside section h1 {
 /*	font-size: 1.5em;*/
@@ -22,10 +22,10 @@ aside section h1 {
 header{ 
 	position: relative;
 	top: 0;
-	background: url(img/header.jpg);
+	background: url("img/header.jpg");
 	color: #777777;
 	height: 35px;
-	text-align: left;
+	text-align: left; 
 	border:#3F0 thick;
 	margin: 5px 0px;
 }
@@ -64,55 +64,176 @@ nav li a:hover, nav li a:active{
 	float: left;
 	width: 200px;
 	height: auto;
-
 }
-.left_container{
-	border: 2px solid rgb(234,234,234);
+.left_container {
+	border: 1px solid rgb(234,234,234);
 	padding: 10px 8px;
-	margin: 20px 0;
+	margin: 20px 1px;
 	color: rgb(36,137,204);
 	background-color: rgb(245,245,245);
 }
 .left_container--up{
 	background-color: #fff;
 }
+aside h2{
+	margin: 10px 1px;
+	font-size:20px;
+}
+.left_container_form {
+	margin: 10px 0;
+}
+#left input, #right section input {
+	position: relative;
+	width: 150px;
+	left: 5px;;
+	border: 2px solid rgb(234,234,234);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	text-align: left;
+	line-height: 160%;
+}
+#left button{
+	float:right;
+	margin: 5px;
+	margin-right:11px;
+	border: 2px solid rgb(234,234,234);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;	
+	line-height: 150%;
+}
+
+.left_container ul li{
+	clear: right;
+	list-style-type: none;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 600;
+	line-height:normal;
+}
 .left_container--bottom ul li{	
-	border-bottom: 2px solid rgb(234,234,234);
+	border-bottom: 1px solid rgb(234,234,234);
 }
-.left_container ul li a:link, .left_container ul li a:visited{
+.left_container a{
 	display:block;
-	line-height: 180%;
-	background-color: rgb(245,245,245);
 	color: rgb(36,137,204);
-	text-decoration: none;
+	background-color: rgb(245,245,245);
+	line-height: 150%;
+	text-decoration: none; 
+	margin: 5px 3px;
+	padding: 5px 7px;
 }
-.left_container--up ul li a:link, .left_container--up ul li a:visited{
+.left_container--up a{
 	background-color: #FFF;
 }
 .left_container ul li a:hover, .left_container ul li a:active{
 	color: #FFF;
 	background-color: rgb(36,137,204);
-    text-decoration: none;
 }
-.left_container ul li{
-	list-style-type: none;
-	text-align:left;
-	line-height:normal;
-	margin: 3px;
-	padding: 6px 3px;
+
+.left_container_breaker{
+	border-bottom: 1px solid rgb(234,234,234);
+}
+aside section h3{
+	font-size: 12px;
+	color: #777777;
+	padding: 5px 2px;
+	border-bottom: 2px solid #fff;
+	text-transform: uppercase;
 }
 
 /*****right side****/
 #right {
-   position: relative;
-   width: 80%;
-   left: 10%;
-	
+	position:absolute;
+	left: 260px;
+   	height: auto;
+	line-height: 120%;
+}
+#right h2{
+	margin: 10px 10px ;
+	font-size: 20px;	
+}
+#right section {
+	margin: 20px 0 10px 10px;
+	text-align:center;
+	border-left: 1px solid rgb(234,234,234);
+	border-right: 1px solid rgb(234,234,234);
+	border-top: 2px solid rgb(234,234,234);
+}
+#right section form{
+	margin:8px;
+	text-align:center;
+}
+#right section button{
+	margin: 5px;
+	border: 2px solid rgb(234,234,234);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;	
+	line-height: 150%;
+}
+#right article{
+	display:list-item;
+	margin: 20px 10px;
+	padding: 10px 0 30px 0;
+	border-bottom: 2px solid rgb(234,234,234);
+}
+#right article h1{
+	font-size: 16px;
+	color: rgb(36,137,204);
+	font-weight:700;
+	line-height: 120%;
+}
+#right article h2{
+	font-size: 12px;
+	font-weight:400;
+}
+.source{
+	color: rgb(36,137,204);
+}
+.author{
+	font-style:italic;
+}
+#right h2 a{
+	color: rgb(36,137,204);
+	position:absolute;
+	right: 25px;
+	text-decoration: none;
+}
+#right h2 a:hover, #right h2 a:active{
+	color: #000;
+}
+#right h3{
+	display:inline-block;
+	background-color: #000;
+	color: #fff;
+	font-size:12px;
+	padding: 2px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#right p{
+	padding: 10px 0;
+	font-size:12px;
+	line-height: 130%;
 }
 
 /***** footer*****/
 footer{
-	clear: left;
+	clear: both;
+	font-size: 12px;
 	position: relative;
 	text-align: center;
+	background-color: rgb(234,234,234);
+	padding: 25px 0;
+	line-height: 110%;
+}
+footer a{
+	color:#000;
+	text-decoration:none;
+}
+footer a:link, footer a:visited{
+	text-decoration:none;
 }
