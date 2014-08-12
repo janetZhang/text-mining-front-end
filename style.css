@@ -19,21 +19,22 @@ nav, section, aside, footer, header,article {
 	background: transparent;
 }
 /***** for html5*****/
-article,aside,dialog,footer,header,section,footer,nav,figure,menu{
-	display:block
+article,aside,dialog,footer,header,section,nav,figure,menu{
+	display: block;
 }
 
 body {
 	font-family: Arial, Verdana, sans-serif;
-	width: 100%;
 	position: absolute; 
 	width: 80%;
 	left: 10%;	
 }
-header h1, nav, nav ul, nav ul li {
+header h1, nav ul li {
 	display: inline;
 }
-
+a {
+text-decoration:none;
+}
 /*****header*****/
 header{ 
 	background-color: rgb(245,245,245);
@@ -56,9 +57,7 @@ nav {
 }
 nav ul li {
 	margin: 0px 10px;
-	padding: 0px;
 	font-size: 11px;
-	display: inline;
 }
 nav li a:link, nav li a:visited{
 	color: #777777;;
@@ -92,26 +91,23 @@ aside h2{
 .left_container_form {
 	margin: 10px 0;
 }
-#left input, #right section input {
-	position: relative;
-	width: 150px;
-	left: 5px;;
-	border: 2px solid rgb(234,234,234);
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	text-align: left;
-	line-height: 160%;
-}
-#left button{
-	float:right;
-	margin: 5px;
-	margin-right:11px;
+
+#left input, #right section input{
 	border: 2px solid rgb(234,234,234);
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;	
 	line-height: 150%;
+}
+#left input, #right section input{
+	position: relative;
+	width: 150px;
+	left: 5px;;
+}
+#left button{
+	float:right;
+	margin: 5px;
+	margin-right:11px;
 }
 
 .left_container ul li{
@@ -130,7 +126,6 @@ aside h2{
 	color: rgb(36,137,204);
 	background-color: rgb(245,245,245);
 	line-height: 150%;
-	text-decoration: none; 
 	margin: 5px 3px;
 	padding: 5px 7px;
 }
@@ -189,12 +184,11 @@ aside section h3{
 	padding: 10px 0 30px 0;
 	border-bottom: 2px solid rgb(234,234,234);
 }
-#right article h1,#right article h1 a{
+.pagination a,#right article h1,#right article h1 a{
 	font-size: 16px;
 	color: rgb(36,137,204);
 	font-weight:700;
 	line-height: 120%;
-	text-decoration: none;
 }
 #right article h2{
 	font-size: 12px;
@@ -210,7 +204,6 @@ aside section h3{
 	color: rgb(36,137,204);
 	position:absolute;
 	right: 25px;
-	text-decoration: none;
 }
 #right h2 a:hover, #right h2 a:active{
 	color: #000;
@@ -230,6 +223,12 @@ aside section h3{
 	font-size:12px;
 	line-height: 130%;
 }
+.pagination,.pagination a{
+	padding: 7px 2px;
+	font-size: 12px;
+	font-weight: 400 ;
+	color: rgb(36,137,204);
+}
 
 /***** footer*****/
 footer{
@@ -242,9 +241,5 @@ footer{
 	line-height: 110%;
 }
 footer a{
-	color:#000;
-	text-decoration:none;
-}
-footer a:link, footer a:visited{
-	text-decoration:none;
+	color:#000;	
 }
