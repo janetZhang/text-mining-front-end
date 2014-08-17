@@ -4,12 +4,12 @@
 <meta charset="utf-8" />
 <meta name="keywords" content="HTML5, CSS3, Textming, JavaScript" />
 <title>Text mining</title>
-
 <link rel="stylesheet" type="text/css" href="style.css"  />
-
+<script src="javascript.js" ></script>
 </head>
 
 <body>
+<div id="wrap">
 <header>
     <h1>Text mining</h1>
     <nav>
@@ -20,9 +20,10 @@
         </ul>
      </nav>
 </header>
+
 <aside id="left">
 	<h2>Source</h2>
-	<section class="left_container left_container--up">
+	<section class="left-container left-container--up">
             <form action="">
                 <label for="feed" ></label>
                 <input type="text" name="feed" />
@@ -32,11 +33,15 @@
                 <li><a href="#">Autoweek-Reviews Rss Feed</a></li>
                 <li><a href="#">HotHardWare.com News Rss Feed</a></li>
                 <li><a href="#">Paul Dix Explain Nothing</a></li>
-                <li><a class="more" href="#">Show All</a></li>
+                <li id="show-more"><a class="more" href="#" onclick="myObject.showAll('show-more','hide-items')">Show All</a></li>	
+                <div id="hide-items">
+                <li onClick="myObject.hide()"><a href="#" >NYTimes.com Home Page </a></li>
+                <li><a href="#">LosAngelos.com Home Page </a></li>
+                </div>
             </ul>
     </section>
-    <div class="left_container_breaker"></div>
-    <section class="left_container left_container--bottom">
+    <div class="left-container-breaker"></div>
+    <section class="left-container left-container--bottom">
    	  <h3>Browse By Category</h3>
     	<ul>
           <li><a href="#">Athesim</a></li>
@@ -48,7 +53,11 @@
           <li><a href="#">Motorcycles</a></li>
           <li><a href="#">Politics</a></li>
           <li><a href="#">Space</a></li>
-          <li><a class="more" href="#">Show All</a></li>
+          <li id="show-more2"><a class="more" href="#" 
+          onclick="myObject.showAll('show-more2','hide-catg')">Show All</a></li>
+          <div id="hide-catg">
+          <li><a href="#">Education</a></li>
+          </div>
   	  </ul>
     </section>
 </aside>
@@ -96,14 +105,16 @@
 </section>
 </div>
 <footer>
-		<div class="f_phone"><span>Call Us:</span> + 310 689 ****</div>
+		<div class="f-phone"><span>Call Us:</span> + 310 689 ****</div>
         <div class="copy">
             <div class="brand">TextMining <span class="color1">G</span>roup</div>
-            &copy; 2014	| <a href="#">Janet</a> </div>
+            &copy; 2014	| <a href="#">Janet</a> 
+         </div>
+         <div>
              Website designed by <a href="#" rel="nofollow">TemplateMonster.com</a>
         </div>
-	</div>
 </footer>
+</div>
 <!–[if lt IE9]> 
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]–>
