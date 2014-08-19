@@ -92,26 +92,7 @@ aside h2{
 	margin: 10px 1px;
 	font-size:20px;
 }
-#left section form{
-	margin: 10px 0;	
-	text-align: center;
-}
-#left input, #right section input,#left button{
-	border: 2px solid rgb(234,234,234);
-	border-radius: 3px;
-	margin: 1px auto;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;	
-	line-height: 150%;
-}
-#left input, #right input{
-	position: relative;
-	width: 150px;
-	left: 5px;;
-}
-#left button{
-	margin: 4px auto;
-}
+
 
 .left-container ul li{
 	clear: right;
@@ -152,7 +133,43 @@ aside section h3{
 #hide-items,#hide-catg{
 	display: none;
 }
-
+/*****form*****/
+.form1, .form2{
+	margin: 10px 0;	
+	padding: 2px;
+	text-align: center;
+}
+.form2{
+	margin: 8px;
+}
+input, button{
+	margin: 2px 5px;
+	vertical-align: middle;
+	line-height: 20px;	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;	
+	border-radius: 4px;
+}
+input{
+	background-color: #FFF;
+	border: 2px solid rgb(234,234,234);
+	height: 20px;
+}
+button{
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#ededed 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#ededed 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #ffffff 0%,#ededed 100%); /* W3C */
+    border: 1px solid #CCCCCC;
+    color: #777777;
+    font: 12px/20px Arial,Tahoma,Verdana,sans-serif;
+    cursor: pointer;  
+	*overflow:visible ;
+}
 /*****right side****/
 #right {
 	float: right;
@@ -171,18 +188,7 @@ aside section h3{
 	border-right: 1px solid rgb(234,234,234);
 	border-top: 2px solid rgb(234,234,234);
 }
-#right section form{
-	margin:8px;
-	text-align:center;
-}
-#right section button{
-	margin: 5px;
-	border: 2px solid rgb(234,234,234);
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;	
-	line-height: 150%;
-}
+
 #right article{
 	display:list-item;
 	margin: 20px 10px;
