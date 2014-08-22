@@ -1,4 +1,6 @@
 /*****reset*****/
+
+
 html, body, div, span, 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -151,6 +153,7 @@ input, button{
 	border-radius: 4px;
 }
 input{
+	font-family: Arial, Verdana, sans-serif;
 	background-color: #FFF;
 	border: 2px solid rgb(234,234,234);
 	height: 20px;
