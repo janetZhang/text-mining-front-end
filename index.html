@@ -6,6 +6,7 @@
 <title>Text mining</title>
 <!–[if IE]> 
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <![endif]–>
 <link rel="stylesheet" type="text/css" href="style.css"  />
 <script src="javascript.js" ></script>
@@ -16,7 +17,7 @@
 <header>
     <h1>Text mining</h1>
     <nav>
-        <ul>
+        <ul> 
             <li><a href="#">Home</a></li>
             <li><a href="#">ContactUs</a></li>
             <li><a href="#">Logout</a></li>
@@ -35,9 +36,9 @@
                 <li><a href="#">Autoweek-Reviews Rss Feed</a></li>
                 <li><a href="#">HotHardWare.com News Rss Feed</a></li>
                 <li><a href="#">Paul Dix Explain Nothing</a></li>
-                <li id="show-more"><a class="more" href="#" onclick="myObject.showAll('show-more','hide-items')">Show All</a></li>	
+                <li id="show-more"><a class="more" href="#">Show All</a></li><!--onclick="myObject.showAll('show-more','hide-items')"-->
                 <div id="hide-items">
-                <li onClick="myObject.hide()"><a href="#" >NYTimes.com Home Page </a></li>
+                <li><a href="#" >NYTimes.com Home Page </a></li>
                 <li><a href="#">LosAngelos.com Home Page </a></li>
                 </div>
             </ul>
@@ -55,8 +56,7 @@
           <li><a href="#">Motorcycles</a></li>
           <li><a href="#">Politics</a></li>
           <li><a href="#">Space</a></li>
-          <li id="show-more2"><a class="more" href="#" 
-          onclick="myObject.showAll('show-more2','hide-catg')">Show All</a></li>
+          <li id="show-more2"><a class="more" href="#">Show All</a></li> <!--onclick="myObject.showAll('show-more2','hide-catg')"-->
           <div id="hide-catg">
           <li><a href="#">Education</a></li>
           </div>
